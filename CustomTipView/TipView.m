@@ -47,9 +47,11 @@
     if (!_label) {
         _label = [[UILabel alloc] init];
         _label.textColor = [UIColor whiteColor];
+        _label.numberOfLines = 0;
+        _label.backgroundColor = [[UIColor redColor] colorWithAlphaComponent:0.4];
         _label.font = [UIFont systemFontOfSize:12.f];
         _label.textAlignment = NSTextAlignmentCenter;
-        _label.text = @"20级用户才能体验国王权限";
+        _label.text = @"20级用户才能体验国王\n权限";
         [_bgView addSubview:_label];
     }
     return _label;
